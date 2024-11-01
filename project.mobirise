@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "wonderland time",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/wonderland.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://wondrland-time.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://wondrland-time.github.io/sitemap.xml",
+    "mbrsiteDomain": "i6ls37semc",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Wonderland TIME™ | Home Official Site",
+        "meta_descr": "Wonderland Time aims to expand its ecosystem by introducing new features, partnerships, and integrations.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://wonderlandtime1.hpage.com\"><img src=\"@PROJECT_PATH@/assets/images/wonderland-time.png\" alt=\"Wonderland time\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "usRVAHXwhb",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#f7f7f7",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#f7f7f7"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Wonderland Time: Exploring the Enigmatic World of DeFi and DAOs</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the rapidly evolving landscape of decentralized finance (DeFi) and decentralized autonomous organizations (DAOs), few projects have captured the imagination of the community like <a href=\"https://wondrland-time.github.io/\" class=\"text-primary\"><b>Wonderland Time</b></a>. This innovative platform not only offers a unique approach to finance but also embodies the spirit of collaboration and experimentation that defines the DeFi movement. In this blog, we’ll dive deep into Wonderland Time, exploring its origins, mechanics, features, and the impact it has made on the broader blockchain ecosystem.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Wonderland Time?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://wonderland.money/\" class=\"text-primary\"><b>Wonderland Time</b></a> is a decentralized finance protocol built on the Avalanche blockchain that introduces several groundbreaking concepts. It combines elements of time-based mechanics, yield farming, and community governance to create a unique ecosystem. At its core, Wonderland Time is designed to provide users with a platform for earning rewards while participating in decentralized finance.<br><br>Key Components of Wonderland Time<br>Time Token (TIME): The native token of the Wonderland Time ecosystem, which serves multiple purposes, including governance, staking, and rewards distribution.<br>Treasury: A community-managed treasury that backs the value of TIME tokens, providing a safety net and enabling various investment strategies.<br>Staking and Yield Farming: Users can stake their TIME tokens to earn rewards or engage in yield farming to maximize their returns.<br>DAOs: Wonderland Time operates as a DAO, empowering its community to participate in decision-making processes and governance.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Origins of Wonderland Time</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Wonderland Time emerged in late 2021 as part of the broader DeFi movement. The project was inspired by the success of other time-based protocols, particularly those that leveraged unique mechanics to engage users. The founding team aimed to create a platform that not only offered attractive financial incentives but also fostered community involvement and collaboration.<br><br><b>The Vision Behind Wonderland Time</b><br>The creators of Wonderland Time envisioned a platform where users could earn rewards by holding and staking their tokens, while also having a say in the direction of the project. This vision aligns with the core principles of DeFi: decentralization, transparency, and community empowerment. By integrating these elements, Wonderland Time aims to create a sustainable and thriving ecosystem.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Wonderland Time Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. The Time Token (TIME)</b><br>The TIME token is at the heart of the Wonderland Time ecosystem. It is an ERC-20 token on the Avalanche blockchain, designed to be used for staking, governance, and participating in the platform’s various financial mechanisms.<br><br><b>Utility of TIME Tokens</b><br>Staking: Users can stake their TIME tokens to earn rewards, typically paid out in additional TIME tokens. This incentivizes long-term holding and participation in the ecosystem.<br>Governance: TIME holders have the power to vote on key decisions affecting the protocol, including treasury allocation, new features, and changes to the ecosystem.<br>Liquidity Provision: Users can provide liquidity to various pools, earning fees and rewards in return.<br><br><b>2. Treasury Management</b><br>Wonderland Time features a community-managed treasury that plays a crucial role in the ecosystem. The treasury is funded through various revenue streams, including transaction fees and investment returns. Its primary functions include:<br><br>Backing TIME Tokens: The treasury acts as a safety net for the TIME token, helping to stabilize its value and instill confidence among holders.<br>Investment Strategies: The treasury can invest in various DeFi projects, generating returns that benefit the community.<br>Funding Initiatives: The community can propose and vote on initiatives funded by the treasury, promoting innovation and growth within the ecosystem.<br><br><b>3. Staking and Yield Farming</b><br>Wonderland Time offers users the ability to stake their TIME tokens and participate in yield farming. These mechanisms provide multiple avenues for earning rewards:<br><br>Staking: Users can lock up their TIME tokens to earn a percentage of the rewards generated by the protocol. This encourages long-term holding and strengthens the community.<br>Yield Farming: By providing liquidity to various pools, users can earn additional tokens as rewards. Yield farming incentivizes participation and helps maintain liquidity within the ecosystem.<br><br><b>4. Decentralized Governance</b><br>Wonderland Time operates as a decentralized autonomous organization (DAO), empowering its community to take part in decision-making processes. This governance model allows TIME holders to propose and vote on various initiatives, creating a sense of ownership and accountability.<br><br>Governance Mechanisms<br>Proposals: Community members can submit proposals for changes, funding allocations, or new features.<br>Voting: TIME holders can vote on proposals, with the outcome determining the future direction of the project.<br>Transparency: All decisions and processes are recorded on the blockchain, ensuring transparency and trust within the community.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><div><br></div><div><b>The Unique Features of Wonderland Time</b></div></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Time-Based Mechanics</b><br>One of the most intriguing aspects of Wonderland Time is its time-based mechanics. Unlike traditional DeFi protocols, Wonderland Time introduces unique features that reward users based on the duration of their participation. This encourages long-term investment and engagement, fostering a more stable ecosystem.<br><br><b>2. Community-Centric Approach</b><br>Wonderland Time places a strong emphasis on community involvement. By operating as a DAO and allowing TIME holders to participate in governance, the project empowers users to shape the future of the platform. This community-centric approach is essential for building trust and loyalty among participants.<br><br><b>3. Cross-Chain Compatibility</b><br>With its foundation on the Avalanche blockchain, Wonderland Time benefits from the speed and efficiency of this network. However, the project also aims to explore cross-chain compatibility, allowing users to interact with other blockchain ecosystems. This flexibility can enhance liquidity and broaden the user base.<br><br><b>4. Educational Initiatives</b><br>Wonderland Time is committed to educating its community about DeFi, blockchain technology, and responsible investing. The project regularly hosts webinars, tutorials, and community discussions to empower users with knowledge and skills necessary for navigating the DeFi landscape.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipment tracking</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  To keep you informed about the progress of your delivery, we\n                  provide shipment tracking for most orders. Once your order is\n                  shipped, you will receive a confirmation email with a tracking\n                  number and instructions on how to track your package. This\n                  allows you to monitor the status of your shipment and estimate\n                  its arrival.\n                </p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Impact of Wonderland Time on the DeFi Landscape</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Pioneering New Concepts</b><br>Wonderland Time has pioneered new concepts that challenge traditional DeFi models. By introducing time-based mechanics and emphasizing community governance, the project has set a precedent for future initiatives in the space. This innovative approach encourages other projects to explore similar models, fostering a culture of experimentation.<br><br><b>2. Strengthening Community Engagement</b><br>The focus on community involvement has strengthened the bonds between participants, creating a vibrant ecosystem where users feel valued and invested. This sense of community is crucial for the long-term success of any DeFi project, as it fosters loyalty and encourages active participation.<br><br><b>3. Promoting Financial Inclusion</b><br>Wonderland Time aims to promote financial inclusion by offering accessible financial products to users around the world. By lowering barriers to entry and providing educational resources, the project empowers individuals to take control of their financial futures.<br><br><b>4. Encouraging Sustainable Practices</b><br>Through its treasury management and community governance, Wonderland Time encourages sustainable practices within the DeFi space. By prioritizing long-term value creation over short-term gains, the project sets an example for other initiatives to follow.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Volatility</b><br>Like all DeFi projects, Wonderland Time is subject to market volatility. The value of TIME tokens can fluctuate significantly, impacting user confidence and participation. It is essential for the community to remain informed and resilient in the face of market challenges.<br><br><b>2. Regulatory Scrutiny</b><br>As DeFi continues to gain mainstream attention, regulatory scrutiny is likely to increase. Wonderland Time must navigate this evolving landscape and ensure compliance with relevant regulations to protect its users and sustain its operations.<br><br><b>3. Security Risks</b><br>Security is a paramount concern in the DeFi space. Wonderland Time must continuously invest in security measures to protect its smart contracts, treasury, and user funds from potential attacks and vulnerabilities.<br><br><b>4. Community Dynamics</b><br>While community governance is a strength, it can also present challenges. Ensuring that all voices are heard and that decision-making processes remain transparent and fair is crucial for maintaining trust within the community.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Wonderland Time</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Ecosystem</b><br>Wonderland Time aims to expand its ecosystem by introducing new features, partnerships, and integrations. This could include collaborations with other DeFi projects, cross-chain capabilities, and innovative financial products.<br><br><b>2. Enhanced User Experience</b><br>The project is committed to enhancing the user experience by simplifying the onboarding process, improving the interface, and providing comprehensive educational resources. A user-friendly platform will attract more participants and foster engagement.<br><br><b>3. Strengthening Community Governance</b><br>As the community grows, Wonderland Time will focus on strengthening its governance model. This may involve implementing new voting mechanisms, enhancing transparency, and ensuring that all members have a voice in decision-making.<br><br><b>4. Sustainability Initiatives</b><br>Wonderland Time recognizes the importance of sustainability in the DeFi space. The project may explore initiatives that promote environmental responsibility, such as carbon offset programs or partnerships with sustainable projects.<br><br><b>5. Continuous Education</b><br>Education will remain a cornerstone of Wonderland Time’s mission. The project will continue to provide resources, workshops, and discussions to empower users with knowledge about DeFi, blockchain technology, and responsible investing.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Wonderland Time represents a fascinating evolution in the world of decentralized finance. By combining innovative mechanics, community governance, and a commitment to sustainability, it has carved out a unique niche within the DeFi landscape. As the project continues to grow and evolve, it serves as a powerful example of what can be achieved when communities come together to create inclusive and empowering financial solutions.<br><br>The journey of Wonderland Time is just beginning, and its impact on the DeFi space is likely to resonate for years to come. Whether you are a seasoned DeFi participant, a curious newcomer, or simply someone interested in the future of finance, Wonderland Time offers an exciting glimpse into the possibilities of decentralized technology.<br><br>In a world increasingly characterized by collaboration and innovation, Wonderland Time embodies the spirit of exploration that defines the DeFi movement. As we move forward, the lessons learned and the community built around Wonderland Time will undoubtedly inspire future projects and shape the trajectory of decentralized finance for generations to come.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "usRVBTx0qH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
